@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Homework 7</title>
+    <link rel="stylesheet" type="text/css" href="7.css">
+</head>
+
+<body>
+
+
+<h3>Задача 1-3
+<br>
+1.Добавьте на страницу элемент input[type=»text»]. Справа от input расположите кнопку «+». При нажатии кнопки «+» добавьте еще один элемент input ниже. Возле появившегося элемента создайте кнопку «-» при нажатии на которую данный input будет удаляться. Внизу формы расположите кнопку «собрать», по нажатию которой текст из элементов input будет выведен в расположенный на странице textarea. 
+Внимание: Количество input на странице не больше . Удалять можно все элементы input кроме последнего.
+<br>
+<br>
+2.Модифицируйте задание 1, добавив три input[type=»radio»]. В опциях первого укажите «Четные», у второго — «Нечетные», у третьего — «Все». В зависимости от выбранной опции, информация считывается соответственно из четных, нечетных или всех input на странице. По умолчанию выбран последний radiobutton.
+<br>
+<br>
+3. Модифицируйте задание 1 добавив проверку на пустые input. Пустой input подсвечивается красным цветом, а рядом выводится надпись «Заполните поле!».
+</h3>
+<hr>
+            <div id="wrapper">
+                <div id="inp1">
+                 
+                    <input type="text" class="inputs">
+                    <button class="plus">+</button>
+                    <span class="message"></span>
+                    <br>
+                </div>
+            </div>
+            <textarea name="" id="txtArea" cols="20" rows="5"></textarea>
+                <div id="wrapper2">
+                <p><input name="radioBtn" type="radio" value="a"> Четные</p>
+                <p><input name="radioBtn" type="radio" value="b"> Нечетные</p>
+                <p><input name="radioBtn" type="radio" value="c" checked> Все</p>
+            </div>
+            <br>
+            <button id="joinInp">собрать</button>
+            <hr>
+     
+<h3>Задание 4. Реализуйте по нажатию на кнопке всплывающее окно с двумя кнопками. Первая кнопка «Опция ., вторая кнопка «Опция .. По нажатию на кнопку окно закрывается, а на странице выводится надпись «Вы выбрали опцию …» и номер выбранной опции.</h3>
+
+
+<button id="btn4">Выберите опцию</button>
+    <div id="alert4">
+            <button id="btn1" value="1">Опция 1</button>
+            <button id="btn2" value="2">Опция 2</button>
+            
+     </div>
+            <hr>
+<h3>Задание 5. Дан список из элементов. Реализуйте скрипт, который отслеживает клик на элементе списка и подсвечивает его красным цветом. При повторном клике, цвет убирается. Добавьте Input, который позволяет добавлять элементы в список. На них также, распостраняется событие click.</h3>
+<hr>      
+ <ul id="list5">
+     <li class = "white">Элемент 1</li>
+     <li class = "white">Элемент 2</li>
+     <li class = "white">Элемент 3</li>
+      
+ </ul>
+  <input type="text" id="newElement">
+<button id="btn5">Добавить элемент</button>
+ <hr>
+
+ <h3>Задание 6. Дан блок с изображением. При наведении мыши, на блок, открывается текстовый блок с черным фоном, прозрачность фона .. Направление раскрытия — с правой части родителя. Если мышь убрана — то блок закрывается с задержкой по времени</h3>
+
+        <div class="text" id="text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            <div class="leaf"></div>
+        </div>
+        <hr>
+           
+ <h3>Задание 7-8.Реализуйте скрипт, который при наведении мыши на элементы (изображение или гиперссылка), будет внизу страницы показывать блок, в котором указан адрес изображения, и атрибут alt, если это изображение и адрес ссылки и атрибут title и target, если это гиперссылка. При отсуствии атрибутов — выводится красным предупреждение.
+    <br>
+ Модифицируйте скрипт из задачи 7 таким образом, чтобы те изображения, которые не имеют атрибут alt, подсвечивались красным цветом.</h3>
+
+
+ <a class="link7" href="https://yandex.ua"><img src="img/yandex.png" width="120" height="40" alt="Яндекс" title="Яндекс"></a>  <!-- alt="Яндекс">Надпись сбоку</a> -->
+ <a class="link7" target="_blank" title="Бинг" href="https://www.bing.com/"><img src="img/bing.jpg" width="120" height="40" target="_blank" title="Бинг" alt="Big"></a>
+ <img class="img7" src="img/google.jpg" width="120" height="40" alt="">
+ <img class="img7" src="img/DuckDuckGo.png" width="120" height="40" alt="duckduckgo">
+    <div>
+    <img class="img7" src="leaf.jpg" height="250" width="250">
+
+    <a class="link7" href="http://hameleons.com/m/photoshop/psd/nature_flower_psd/79941-podsolnuxi-bukety-podsolnuxov-kompozicii-s-podsolnuxami-klipart-v-formate-png-na-prozrachnom-fone.html" target="_blank" title="Подсолнухи"><img src="sunflower.jpg" height="250" width="245" alt="Подсолнух пропал" title="Подсолнух"></a>
+    </div>
+    <p id="msg7"></p>
+    <hr>
+    <h3>Задание 9. Создайте скрипт для проверки наличия на странице элементов h1-h6 выводя при этом их количество. Если какого-либо заголовка нет — вывести предупреждение.</h3>
+
+    
+    <button id="btn9">Наличие H1-H6</button>
+    <p id="report9"></p>
+    <hr>
+
+<h3>Задание 10. Модифицируйте скрипт 9 таким образом, чтобы он определял наличие meta title, meta description, meta keywords, рассчитывая длину первых двух. Если они отсутсвуют — выводится предупреждение.</h3>
+<button id="btn10">Проверка Meta</button>
+<p id="report10"></p>
+
+<hr>
+
+    <script src="7.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+
+#btn1, #btn2 {
+	height: 30px;
+	line-height: 30px;
+	background-color: yellow;
+	border: 1px solid red;
+}
+
+#alert4 {
+	display: none;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+}
+.white {
+	background: none;
+}
+
+.red {
+	background: red;
+}
+
+#msg7 {
+	position: fixed;
+	bottom: 20px;
+	margin: 0 auto;
+	background: black;
+	border: 3px solid green;
+	padding: 1%;
+	width: 95%;
+	line-height: 1.5em;
+	display: none;
+}
+
+.text {
+	height: 200px;
+	width: 200px;
+	overflow: hidden;
+	position: relative;
+	background: black;
+	color: white;
+}
+.leaf {
+	height: 200px;
+	width: 200px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: url(leaf.jpg);
+	transition: all ease 1s;
+	opacity: 1;
+}
